@@ -1,1 +1,2 @@
 # rock-paper-scissorsV3
+This rock paper scissors game will have a fully functional UI used to play against a computer. With this program I hope to reenforce a basic understanding of CSS, HTML, and Javascript. 

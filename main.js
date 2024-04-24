@@ -37,5 +37,16 @@ function playRound(humanChoice, computerChoice) {
                 console.log("It's a tie")
             }
             break;
+        case paper :
+            if (computerChoice == scissors) {
+                computerChoice++;
+                console.log("You lose! Scissors beats paper");
+            }
+            else if(computerChoice == rock) {
+                humanScore++;
+                console.log("You win! Paper beats rock")
+            } else {
+                console.log("It's a tie")
+            }
     }
 }

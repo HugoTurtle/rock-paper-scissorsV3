@@ -18,3 +18,21 @@ function getHumanChoice() {
     return prompt("Please input : rock, paper, or scissors");
 }
 
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
+
+    switch(humanChoice) {
+        case "rock" :
+            if (computerChoice == "paper") {
+                computerChoice++;
+                console.log("You lose! Paper beats rock");
+            }
+            else if(computerChoice == "scissors") {
+                humanScore++;
+                console.log("You win! Rock beats scissors")
+            } else {
+                console.log("It's a tie")
+            }
+            break;
+    }
+}

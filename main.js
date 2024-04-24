@@ -21,6 +21,10 @@ function getHumanChoice() {
     return prompt("Please input : rock, paper, or scissors");
 }
 
+function displayScore() {
+    return(`Player score : ${humanScore} Computer Score : ${computerScore}`);
+}
+
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
 
@@ -62,4 +66,6 @@ function playRound(humanChoice, computerChoice) {
             }
             break;
     }
+
+    console.log(displayScore());
 }

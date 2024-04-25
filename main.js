@@ -82,3 +82,5 @@ function playGame(roundsPlayed) {
     }
     console.log(determineWinner(humanScore,computerScore));
 }
+
+playGame(5);

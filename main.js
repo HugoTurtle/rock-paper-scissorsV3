@@ -69,3 +69,9 @@ function playRound(humanChoice, computerChoice) {
 
     console.log(displayScore());
 }
+
+function playGame(roundsPlayed) {
+    for(let i = 0; i < roundsPlayed; i++) {
+        playRound(getHumanChoice(), getComputerChoice());
+    }
+}

@@ -70,8 +70,15 @@ function playRound(humanChoice, computerChoice) {
     console.log(displayScore());
 }
 
+function determineWinner(humanScore,computerScore) {
+    if(humanScore > computerScore) return "You win! Congratulation";
+    else if(computerScore >  humanScore) return "You lose. Please try again!";
+    else return "It's a tie! Please try again!";
+}
+
 function playGame(roundsPlayed) {
     for(let i = 0; i < roundsPlayed; i++) {
         playRound(getHumanChoice(), getComputerChoice());
     }
+    console.log(determineWinner(humanScore,computerScore));
 }

@@ -4,7 +4,7 @@ const rock = "rock";
 const paper = "paper";
 const scissors = "scissors";
 
-const resultContainer = querySelector('#result-container');
+const resultContainer = document.querySelector('#result-container');
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max) + 1;

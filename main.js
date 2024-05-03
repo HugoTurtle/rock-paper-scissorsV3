@@ -3,6 +3,7 @@ let computerScore = 0;
 const rock = "rock";
 const paper = "paper";
 const scissors = "scissors";
+let gamesPlayed = 1;
 
 const resultContainer = document.querySelector('#result-container');
 let score = document.createElement('p');
@@ -81,17 +82,27 @@ const buttonContainer = document.querySelector("#button-container");
 buttonContainer.addEventListener(`click`, (Event) => {
     let target = Event.target;
 
+    if(gamesPlayed == 5) {
+        let buttons = document.querySelectorAll("button");
+        for(currentButton of buttons) {
+            currentButton.disabled = true;
+        }
+    }
+
     switch(target.id) {
         case 'rock':
             playRound(rock, getComputerChoice());
+            ++gamesPlayed;
         break;
         
         case 'paper':
             playRound(paper, getComputerChoice());
+            ++gamesPlayed;
         break;
 
         case 'scissors': 
             playRound(scissors, getComputerChoice());
+            ++gamesPlayed;
         break;
     }
 })

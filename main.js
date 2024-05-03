@@ -20,7 +20,9 @@ function getComputerChoice() {
 }
 
 function displayScore() {
-    return(`Player score : ${humanScore} Computer Score : ${computerScore}`);
+    let score = document.createElement('p');
+    score.textContent = `Player score : ${humanScore} Computer Score : ${computerScore}`;
+    resultContainer.appendChild(score);
 }
 
 function playRound(humanChoice, computerChoice) {

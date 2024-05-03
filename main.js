@@ -84,6 +84,7 @@ const buttonContainer = document.querySelector("#button-container");
 buttonContainer.addEventListener(`click`, (Event) => {
     let target = Event.target;
 
+    //Play the round
     switch(target.id) {
         case 'rock':
             playRound(rock, getComputerChoice());
@@ -101,6 +102,7 @@ buttonContainer.addEventListener(`click`, (Event) => {
         break;
     }
 
+    //Checks if the max number of games has been reached
     if(gamesPlayed == 5) {
         determineWinner(humanScore,computerScore);
         let buttons = document.querySelectorAll("button");

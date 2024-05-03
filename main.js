@@ -56,7 +56,7 @@ function playRound(humanChoice, computerChoice) {
         case scissors : 
             if(computerChoice == rock) {
                 computerScore++;
-                cmatchResult.textContent = "You lose! Rock beats scissors";
+                matchResult.textContent = "You lose! Rock beats scissors";
             }
             else if(computerChoice == paper) {
                 humanScore++; 

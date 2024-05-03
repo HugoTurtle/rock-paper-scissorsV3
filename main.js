@@ -83,3 +83,22 @@ function playGame(roundsPlayed) {
     console.log(determineWinner(humanScore,computerScore));
 }
 
+const buttonContainer = document.querySelector("#button-container");
+
+buttonContainer.addEventListener(`click`, (Event) => {
+    let target = Event.target;
+
+    switch(target.id) {
+        case 'rock':
+            
+        break;
+        
+        case 'paper':
+
+        break;
+
+        case 'scissors': 
+
+        break;
+    }
+})
